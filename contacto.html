@@ -13,12 +13,13 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 
-    <!-- Jquery ui -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
-    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
-    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
-    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <!-- VALIDACION JQUERY -->
+    <script type="text/javascript" src="js/jquery.form-validator.min.js"></script>
+    <!-- MOMENT JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+
     <!-- MIS SCRIPTS -->
     <script type="text/javascript" src="js/main.js"></script>
 
@@ -56,26 +57,46 @@
         <!-- CONTENIDO -->
         <section id="content">
             <div id="box">
+                <!-- cargar formulario  -->
 
-                <!-- se carga el acordeon -->
+                <h2>Formulario de Contacto</h2>
+                <form id="form-contact">
+                    <label for="name">Nombre</label>
+                    
+                    <input type="text" name="name"  data-validation ='alphanumeric' />
+                    
+                    <label for="surname">Apellidos</label>
+                    
+                    <input type="text" name="surname"  data-validation ='alphanumeric' />
+                    
+                    <label for="email">Email</label>
+                    
+                    <input type="email" name="email"  data-validation ='email'/>
+                    
+                    <label for="sex">Sexo</label>
+                    
+                    <select name="sex"  data-validation ='required'>
+                        
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+                    
+            
+                    <label for="age">Edad</label>
+                    
+                    <input type="number" name="age"  data-validation ='number' />
+                    
+                    <label for="date">Fec.Nac</label>
+                
+                    <input type="text" name="date"  data-validation ='date'  data-validation-format="dd-mm-yyy"/>
 
-                <div id="acordeon">
-                    <h3>Quienes somos</h3>
-                    <p>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        Why do we use it?</p>
+                <br/>
+                    <input type="submit" value="Enviar" />
 
-                    <h3>Politica de Envios</h3>
-                    <p>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        Why do we use it?</p>
+                </form>
 
-                    <h3>Nuestro Lema</h3>
-                    <p>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        Why do we use it?</p>
-                </div>
             </div>
+
             <aside id="sidebar">
                 <div id="about">
                     <h4>Quien soy?</h4>

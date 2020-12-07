@@ -194,12 +194,13 @@ $(document).ready(function () {
 
 
 
+    // condicion acordeon
 
     if (window.location.href.indexOf('about') > -1) {
 
         $("#acordeon").accordion({
 
-            animate:200,
+            animate: 200,
             collapsible: true // parametro que sirve para que se queden las tres pestañas cerradasg
 
 
@@ -207,6 +208,36 @@ $(document).ready(function () {
 
 
     }
+
+
+    // condicion reloj 
+
+    if (window.location.href.indexOf('reloj') > -1) {
+
+
+        // con el set interval hacemos que se actualice cada segundo
+        setInterval(function () {
+
+            var reloj = moment().format('hh:mm:ss');
+            $('#reloj').html(reloj);
+
+        }, 1000)
+
+    }
+
+        // VALIDACION FORMULARIO 
+
+
+        if (window.location.href.indexOf('contacto') > -1) {
+
+
+
+            $.validate({
+                lang: 'es'
+            });
+
+        }
+    
 
 
 });

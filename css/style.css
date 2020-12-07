@@ -161,6 +161,8 @@ body{
     border: 1px solid black;
     padding: 35px;
     background-color: cadetblue;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -174,7 +176,8 @@ form input[type="email"]{
     width: 50%;
     padding: 5px;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: bold;
 
 }
  
@@ -235,4 +238,63 @@ footer{
     float: left;
 
     margin-top: 40px;
+}
+
+
+#reloj{
+    font-size: 40px;
+     font-family: fantasy;
+     width: 30%;
+     border: 1px solid black;
+     padding: 40px;
+     text-align: center;
+     margin: 0px auto;
+}
+
+#box h2{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5%;
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+#form-contact{
+
+    width: 60%;
+    margin-left: 20%;
+}
+
+#form-contact label{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+}
+
+
+#form-contact input{
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#form-contact select{
+
+    font-size: 15px;
+    font-weight: bold;
+    
+
+}
+
+.help-block{
+
+    font-size: 20px;
+    color: red;
+    float: right;
+    border: 1px solid red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+
 }
