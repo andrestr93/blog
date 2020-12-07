@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto</title>
+    <!-- estilos css -->
+    <link id="tema" rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- jqUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    <!-- MIS SCRIPTS -->
+    <script type="text/javascript" src= "js/main.js"></script>
+
+<!-- MOMENT JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+
+</head>
+
+<body>
+    <section id="global">
+        <div>
+        <button id="mod-oscure">Modo Oscuro</button>
+        <button id="mod-normal">Modo Normal</button>
+        </div>
+        <!-- CABECERA -->
+        <header>
+
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav>
+                <ul id="menu">
+
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Reloj</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SLIDER -->
+
+        <div>
+            <div class="galeria">
+                <div><img src="../proyectojs/img/lago.jpg" title="Funky roots"></div>
+                <div><img src="../proyectojs/img/lago2.jpg" title="The long and winding road"></div>
+                <div><img src="../proyectojs/img/lago3.jpg" title="Happy trees"></div>
+                <div><img src="../proyectojs/img/prub.jpg" title="Happy trees"></div>
+                <div><img src="../proyectojs/img/saw.jpg" title="Happy trees"></div>
+
+            </div>
+
+        </div>
+        <!-- CONTENIDO -->
+        <section id="content">
+            <div id="posts">
+                <!-- se cargan los post desde un json -->
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>Quien soy?</h4>
+                    <img src="./img/caracol.jpg" />
+                    <p>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Why do we use it?
+                    </p>
+                </div>
+
+                <div id="login">
+                    <h4>Identificate</h4>
+                    <form>
+                        <label for="email">Email</label>
+                        <br/>
+                        <input type="text" name="email"  id="email"/>
+
+
+                        <br/>
+                        
+                        <label for="password">Contraseña</label>
+                        
+                        <br/>
+                        <input type="password" name="password" />
+
+                        <br/>
+                        <input type="submit" value="Entrar" />
+                    </form>
+
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <footer id="pie">
+        Master en JavaScript &copy;
+        <a id="arriba" href="#">Subir arriba</a>
+    
+    </footer>
+</body>
+
+</html>

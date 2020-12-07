@@ -1,0 +1,216 @@
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.clearfix{
+
+    float: none;
+    clear: both;
+}
+body{
+
+    background: url('../img/saw.jpg');
+    background-attachment: fixed;
+}
+
+#global{
+
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+#logo{
+
+    font-family: Verdana, Arial;
+    font-size: 30px;
+    background-color: black;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    line-height: 75px;
+
+
+}
+
+#about p {
+
+    color:  white;
+}
+
+#menu{
+
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 20px;
+    line-height: 46px;
+    list-style: none;   
+}
+
+#menu li{
+    height: 46px;
+    display: inline-block;
+
+}
+
+#menu li :hover{
+    background-color: teal;
+    
+}
+
+
+
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px  solid black;
+
+
+}
+
+#posts{
+
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.post{
+
+    padding: 15px;
+    
+}
+
+
+.post h2{
+
+    font-size: 30px;
+    color: blue;
+
+
+}
+
+#date{
+
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: fantasy;
+
+}
+
+
+.post p{
+
+    line-height: 20px;
+    text-align: justify;
+    color: white;
+}
+
+
+#btn-more{
+
+    display: block;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+
+
+}
+
+
+#sidebar{
+
+    float: right;
+    width: 31%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#sidebar img {
+
+    width: 50%;
+
+}
+
+#sidebar p {
+
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+#login{
+
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 35px;
+    background-color: cadetblue;
+}
+
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 50%;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 10px;
+
+}
+ 
+
+
+
+input[type="submit"]{
+    background-color: teal;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+
+
+}
+
+
+footer{
+
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.bx-wrapper , .bx-viewport{
+    height: 480px !important;
+}
